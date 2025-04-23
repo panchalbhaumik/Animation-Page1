@@ -1,0 +1,197 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.nav-link:hover {
+    color: #68c466
+}
+
+
+.step-card {
+    border-radius: 1rem;
+    background-color: white;
+    padding: 2rem;
+    width: 95%;
+    height: 100%;
+
+}
+
+.step-card:hover {
+    background-color: #34c759;
+    color: white;
+}
+
+.step-number {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+.service-image {
+    width: 150%;
+    height: 200px;
+    border-radius: 1rem;
+}
+
+.btn-wrapper {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.btn-animated {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 0 2rem 0 2rem;
+    height: 100%;
+    line-height: 50px;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: transform 0.4s ease;
+    z-index: 2;
+}
+
+.btn-wrapper:hover .btn-animated {
+    transform: translateX(15%);
+}
+
+.btn-bg {
+    background-color: #34c759;
+    color: #fff;
+    height: 100%;
+    width: 100px;
+    border-radius: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    font-size: 2rem;
+}
+
+.milestone-section {
+    background-color: #0f0f0f;
+    color: white;
+    padding: 60px 0;
+}
+
+.milestone-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.milestone-image-wrapper img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #34c759;
+    color: white;
+    border: none;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.play-button:hover {
+    width: 100px;
+    height: 100px;
+}
+
+.milestone-box {
+    background-color: #fff;
+    color: #000;
+    border-radius: 50px;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.milestone-icon {
+    background-color: #34c759;
+    color: white;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.milestone-number {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #34c759;
+}
+
+.milestone-label {
+    margin: 0;
+    font-size: 1rem;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(80px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-up {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 0.7s ease-out;
+}
+
+.animate-slide-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Slide Left Animation (Logo Loop) */
+@keyframes slideLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.logo-slider>div {
+    animation: slideLeft 50s linear infinite;
+    white-space: nowrap;
+}
