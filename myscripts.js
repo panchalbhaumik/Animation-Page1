@@ -44,3 +44,11 @@ function animateMilestones() {
 // Trigger on load
 window.addEventListener('DOMContentLoaded', animateMilestones);
 
+
+//Carousel cards
+const carousel = document.getElementById('cardCarousel');
+const cardWidth = 300 + 16; // Card width + gap (adjust if needed)
+
+function scrollCards(direction) {
+    carousel.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
+}
