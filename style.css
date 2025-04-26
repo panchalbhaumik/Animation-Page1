@@ -350,6 +350,10 @@ body {
     transform: translateY(-50%);
 }
 
+.custom-carousel-btn:hover {
+    background-color: #68c466;
+}
+
 .carousel-control-prev {
     left: 92%;
 }
