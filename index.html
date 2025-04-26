@@ -17,7 +17,7 @@
 
 </head>
 
-<body>
+<body class="overflow-hidden">
 
     <!--Navbar-->
 
@@ -65,7 +65,7 @@
                         </ul>
                     </li>
 
-                    <button class="btn bg-dark text-white rounded-pill px-3 py-2 ms-2">Connect</button>
+                    <button class="btn bg-dark text-white rounded-pill px-3 py-2 ms-2">Contact</button>
                 </div>
             </div>
         </div>
@@ -92,8 +92,8 @@
             </div>
         </div>
 
-        <!-- CTA Full-Width Behind Image -->
-        <div class="position-absolute bottom-0 start-0 w-100 animate-slide-up"
+        <!-- CTA for large screens: Positioned Behind -->
+        <div class="position-absolute bottom-0 start-0 w-100 animate-slide-up d-none d-lg-block"
             style="z-index: 1; animation-delay: 0.4s;">
             <div class="bg-dark text-white rounded-pill px-3 py-3 mx-2 my-5"
                 style="margin-left: 0; margin-right: 0; width: 97%;">
@@ -112,7 +112,27 @@
                 </div>
             </div>
         </div>
+
+        <!-- CTA for small screens: Below Image -->
+        <div class="d-block d-lg-none w-100 animate-slide-up px-3 mt-4" style="animation-delay: 0.4s;">
+            <div class="bg-dark text-white rounded-pill px-3 py-3">
+                <div class="d-flex align-items-center">
+                    <div class="rounded-circle d-flex justify-content-center align-items-center"
+                        style="width: 60px; height: 60px; background-color: #68c466; rotate: -30deg;">
+                        <i class="fa-solid fa-arrow-down text-white fs-5"></i>
+                    </div>
+                    <div class="ms-3">
+                        <h5 style="color: #68c466;">Get Started — Now</h5>
+                        <p class="mb-0 small">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
 
 
     <!-- Section 1: Logo Slider -->
@@ -812,7 +832,7 @@
 
 
     <!--Contact Us-->
-    <div class="container-fluid bg-light py-5">
+    <footer class="container-fluid bg-light py-5">
         <div class="row align-items-center g-4">
             <div class="col-md-9 animate-slide-up pe-5" style="animation-delay: 0.4s;">
                 <div class="display-5 fw-bold text-dark animate-slide-up mb-4 ps-4 mt-4 pt-4"
@@ -824,9 +844,8 @@
                 <div class="btn-bg ps-1"> →</div>
                 <button class="btn-animated">Contect Us — Now</button>
             </div>
+            <div class="mx-auto my-4" style="width: 98%; height: 3px; background-color: black;"></div>
         </div>
-
-        <div class="mx-auto my-4" style="width: 98%; height: 3px; background-color: black;"></div>
 
         <div class="row g-4 text-start pt-5">
             <!-- Logo & Description -->
@@ -876,35 +895,35 @@
                     </div>
                 </div>
             </div>
+        </div>
 
+        <div class="row g-4 text-start animate-slide-up pt-4" style="animation-delay: 0.3s;">
 
-            <div class="row g-4 text-start animate-slide-up pt-2" style="animation-delay: 0.3s;">
-
-                <div class="col-12 col-md-8 ps-3 pt-3">
-                    <div class="d-flex gap-2 ps-3">
-                        <a href="#"
-                            class="d-inline-flex align-items-center justify-content-center rounded-circle bg-dark text-white text-decoration-none"
-                            style="width: 35px; height: 35px;">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#"
-                            class="d-inline-flex align-items-center justify-content-center rounded-circle bg-dark text-white text-decoration-none"
-                            style="width: 35px; height: 35px;">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#"
-                            class="d-inline-flex align-items-center justify-content-center rounded-circle bg-dark text-white text-decoration-none"
-                            style="width: 35px; height: 35px;">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 text-center pt-4">
-                    <p class="text-secondary small">Copyright © 2025 DigiQU | Powered by DigiQU</p>
+            <div class="col-12 col-md-8 ps-3 pt-3">
+                <div class="d-flex gap-2 ps-3">
+                    <a href="#"
+                        class="d-inline-flex align-items-center justify-content-center rounded-circle bg-dark text-white text-decoration-none"
+                        style="width: 35px; height: 35px;">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#"
+                        class="d-inline-flex align-items-center justify-content-center rounded-circle bg-dark text-white text-decoration-none"
+                        style="width: 35px; height: 35px;">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#"
+                        class="d-inline-flex align-items-center justify-content-center rounded-circle bg-dark text-white text-decoration-none"
+                        style="width: 35px; height: 35px;">
+                        <i class="fab fa-youtube"></i>
+                    </a>
                 </div>
             </div>
+            <div class="col-12 col-md-4 text-center pt-4">
+                <p class="text-secondary small">Copyright © 2025 DigiQU | Powered by DigiQU</p>
+            </div>
         </div>
-    </div>
+
+    </footer>
     <script src="myscripts.js"></script>
 
 </body>
